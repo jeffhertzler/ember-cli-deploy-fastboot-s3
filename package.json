@@ -1,7 +1,7 @@
 {
   "name": "ember-cli-deploy-fastboot-s3",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "version": "0.1.0",
+  "description": "An ember-cli-deploy plugin for deploying to s3 in conjunction with fastboot-app-server and fastboot-s3-notifier/fastboot-s3-downloader",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -11,11 +11,11 @@
     "start": "ember server",
     "test": "ember try:each"
   },
-  "repository": "",
+  "repository": "https://github.com/jeffhertzler/ember-cli-deploy-fastboot-s3",
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "",
+  "author": "Jeff Hertzler <jeffhertzler@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.2",
@@ -41,10 +41,20 @@
     "loader.js": "^4.0.1"
   },
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "ember-cli-deploy-plugin"
   ],
   "dependencies": {
-    "ember-cli-babel": "^5.1.6"
+    "aws-sdk": "^2.3.6",
+    "awscred": "^1.1.0",
+    "chalk": "^1.1.1",
+    "digest-stream": "^0.2.2",
+    "ember-cli-babel": "^5.1.6",
+    "ember-cli-deploy-plugin": "^0.2.0",
+    "fs-promise": "^0.3.1",
+    "glob": "^6.0.1",
+    "inquirer": "^0.11.0",
+    "rsvp": "^3.1.0"
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
